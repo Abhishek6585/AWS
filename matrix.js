@@ -9,9 +9,10 @@ const columns = canvas.width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
 
 function drawMatrix() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; // background fade
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "#7f5af0";
+
+  ctx.fillStyle = "#ff0000"; // matrix falling char color
   ctx.font = fontSize + "px monospace";
 
   for (let i = 0; i < drops.length; i++) {
