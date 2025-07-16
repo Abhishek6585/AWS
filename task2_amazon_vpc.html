@@ -12,55 +12,55 @@
     <div class="image-cards">
 
        <div class="card">
-        <img src="images/t2s1.png" alt="Terraform Configuration File" />
+        <img src="t2s1.png" alt="Terraform Configuration File" />
         <h3>1. Terraform Configuration</h3>
         <p>The <strong>main.tf</strong> file defines the desired infrastructure, including the AWS provider, data sources for an Ubuntu AMI and the default VPC, and resources like a security group.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s2.png" alt="Terraform Init Output" />
+        <img src="t2s2.png" alt="Terraform Init Output" />
         <h3>2. Initialize Terraform</h3>
         <p>The <code>terraform init</code> command prepares the working directory by downloading necessary provider plugins (e.g., hashicorp/aws) and creating a lock file to ensure consistent provider versions.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s3.png" alt="Terraform Validate Output" />
+        <img src="t2s3.png" alt="Terraform Validate Output" />
         <h3>3. Validate Configuration</h3>
         <p>Running <code>terraform validate</code> checks the syntax of the configuration files. A "Success!" message confirms that the code is syntactically correct and ready for planning.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s4.png" alt="Terraform Plan Output" />
+        <img src="t2s4.png" alt="Terraform Plan Output" />
         <h3>4. Create an Execution Plan</h3>
         <p>The <code>terraform plan</code> command shows what actions Terraform will take to achieve the desired state. Here, it indicates that it will create one EC2 instance and other associated resources.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s5.png" alt="Terraform Apply Output" />
+        <img src="t2s5.png" alt="Terraform Apply Output" />
         <h3>5. Apply the Changes</h3>
         <p><code>terraform apply</code> executes the plan. After user confirmation, Terraform provisions the resources in AWS, creating the EC2 instance and security group as defined in the code.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s6.png" alt="EC2 Instance List in AWS Console" />
+        <img src="t2s6.png" alt="EC2 Instance List in AWS Console" />
         <h3>6. Verify in AWS Console</h3>
         <p>After a successful apply, the newly created EC2 instance is visible in the AWS Management Console, showing its status as "Running" and "Initializing."</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s7.png" alt="EC2 Instance Summary in AWS Console" />
+        <img src="t2s7.png" alt="EC2 Instance Summary in AWS Console" />
         <h3>7. Instance Summary</h3>
         <p>The instance summary provides detailed information, confirming its public IP address, instance type (t2.micro), and that it has been launched in the correct VPC.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s8.png" alt="Terraform Destroy Plan" />
+        <img src="t2s8.png" alt="Terraform Destroy Plan" />
         <h3>8. Plan the Destruction</h3>
         <p>The <code>terraform destroy</code> command creates a plan to remove all managed infrastructure. The output lists every resource that will be deleted upon confirmation.</p>
       </div>
 
       <div class="card">
-        <img src="images/t2s9.png" alt="Terraform Destroy Execution" />
+        <img src="t2s9.png" alt="Terraform Destroy Execution" />
         <h3>9. Destroy the Infrastructure</h3>
         <p>After confirming the destruction plan, Terraform proceeds to delete all the created resources. The output confirms that 7 resources were successfully destroyed, cleaning up the environment.</p>
       </div>
