@@ -10,16 +10,67 @@
   <div class="container">
     <h2>⚙️ Task 3: Amazon Lambda</h2>
     <div class="image-cards">
+
       <div class="card">
-        <img src="https://via.placeholder.com/800x400/1f1f23/7f5af0?text=Lambda+Function" />
-        <h3>Lambda Function</h3>
-        <p>Created Lambda function triggered by S3 event.</p>
+        <img src="t3s1.png" alt="Lambda Terraform Configuration" />
+        <h3>1. Lambda Terraform Configuration</h3>
+        <p>The <strong>main.tf</strong> file defines the IAM role, policy attachment, archive file for the code, and the AWS Lambda function resource itself.</p>
       </div>
+
       <div class="card">
-        <img src="https://via.placeholder.com/800x400/1f1f23/7f5af0?text=CloudWatch+Logs" />
-        <h3>Monitoring</h3>
-        <p>Used CloudWatch to verify Lambda execution logs.</p>
+        <img src="t3s2.png" alt="Terraform Init" />
+        <h3>2. Initialize Terraform</h3>
+        <p>The <code>terraform init</code> command prepares the working directory by downloading the necessary AWS and archive provider plugins.</p>
       </div>
+
+      <div class="card">
+        <img src="t3s3.png" alt="Terraform Validate" />
+        <h3>3. Validate Configuration</h3>
+        <p>Running <code>terraform validate</code> checks the configuration for syntax errors, confirming that the code is valid and ready to be planned.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s4.png" alt="Terraform Plan" />
+        <h3>4. Plan the Deployment</h3>
+        <p><code>terraform plan</code> shows the execution plan, detailing the resources that will be created, such as the IAM role and the Lambda function.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s5.png" alt="Terraform Apply" />
+        <h3>5. Apply the Configuration</h3>
+        <p><code>terraform apply</code> executes the plan, provisioning the Lambda function and its associated IAM role in the AWS cloud after confirmation.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s6.png" alt="Lambda Function in AWS Console" />
+        <h3>6. Verify Function in AWS Console</h3>
+        <p>After deployment, the <strong>hello_lambda</strong> function appears in the AWS Lambda console, confirming its successful creation.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s7.png" alt="Lambda Code Source" />
+        <h3>7. Review Lambda Code Source</h3>
+        <p>The AWS console shows the Python code that was deployed, allowing for verification of the function's logic and content.</p>
+      </div>
+      
+      <div class="card">
+        <img src="t3s8.png" alt="Lambda Runtime Properties" />
+        <h3>8. Check Runtime Properties</h3>
+        <p>The function's configuration details confirm the runtime is set to Python 3.11, along with other properties like architecture and handler name.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s9.png" alt="Terraform Destroy Plan" />
+        <h3>9. Plan Infrastructure Destruction</h3>
+        <p>The <code>terraform destroy</code> command generates a plan to remove all managed resources, listing the Lambda and IAM role to be deleted.</p>
+      </div>
+
+      <div class="card">
+        <img src="t3s10.png" alt="Terraform Destroy Execution" />
+        <h3>10. Execute Destruction</h3>
+        <p>After confirmation, Terraform tears down the infrastructure. The "Destroy complete!" message confirms all resources have been removed.</p>
+      </div>
+
     </div>
     <a class="back-btn" href="index.html">← Back to Home</a>
   </div>
