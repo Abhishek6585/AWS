@@ -7,6 +7,18 @@
 </head>
 <body>
 
+  <h3>Directory Structure</h3>
+
+  <pre class="line-numbers"><code class="language-javascript">
+    aws-lambda/
+    ├── main.tf
+    ├── variables.tf
+    ├── lambda_function.py
+
+
+  </code></pre>
+  
+
   <h3>main.tf</h3>
 
   <pre class="line-numbers"><code class="language-javascript">
@@ -52,6 +64,24 @@ resource "aws_lambda_function" "hello_lambda" {
   filename      = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
 }
+
+  </code></pre>
+
+<h3>variables.tf</h3>
+
+  <pre class="line-numbers"><code class="language-javascript">
+    # You can leave this empty if no variables for now
+
+</code></pre>
+
+<h3>lambdafunction.py</h3>
+
+  <pre class="line-numbers"><code class="language-javascript">
+ def lambda_handler(event, context):
+    return {
+        'statusCode': 200,
+        'body': 'Hello, World from Lambda via Terraform!'
+    }
 
   </code></pre>
 
