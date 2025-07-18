@@ -11,16 +11,65 @@
     <h2>🚀 Task 5: Amazon EBS</h2>
     <div class="image-cards">
       <div class="card">
-        <img src="placeholder.png" />
-        <h3>Amazon EBS Example</h3>
-        <p>Description of what was done in this task.</p>
+        <img src="images/t5s1.png" alt="Terraform Configuration" />
+        <h3>Terraform Configuration</h3>
+        <p>The main.tf file defines the AWS infrastructure, including a VPC, subnet, security group, EC2 instance, and an EBS volume to be attached.</p>
       </div>
       <div class="card">
-        <img src="placeholder.png" />
-        <h3>Amazon EBS Details</h3>
-        <p>Further explanation or screenshots related to Amazon EBS.</p>
+        <img src="images/t5s2.png" alt="Terraform Init" />
+        <h3>Terraform Initialization</h3>
+        <p>The `terraform init` command initializes the project, downloading the necessary AWS provider plugin.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s3.png" alt="Terraform Validate" />
+        <h3>Terraform Validation</h3>
+        <p>Running `terraform validate` checks the configuration files for syntax errors, confirming the code is valid.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s4.png" alt="Terraform Plan" />
+        <h3>Terraform Plan</h3>
+        <p>The `terraform plan` command shows the execution plan, detailing the resources to be created, such as the EBS volume and EC2 instance.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s5.png" alt="Terraform Apply" />
+        <h3>Terraform Apply</h3>
+        <p>The `terraform apply` command executes the plan, provisioning the defined resources in the AWS cloud.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s6.png" alt="EC2 Instance in AWS Console" />
+        <h3>EC2 Instance Created</h3>
+        <p>The AWS Management Console shows the newly created EC2 instance, 'EBSDemoInstance', is running successfully.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s7.png" alt="EBS Volumes in AWS Console" />
+        <h3>EBS Volumes Created</h3>
+        <p>The console displays two volumes: the instance's root volume and the additional 'MyEBSVolume' created via Terraform.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s8.png" alt="EBS Volume Details" />
+        <h3>EBS Volume Details</h3>
+        <p>A detailed view of the root EBS volume, showing it is 'in-use' and attached to our EC2 instance.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s9.png" alt="Terraform Destroy Plan" />
+        <h3>Terraform Destroy Plan</h3>
+        <p>Running `terraform destroy` generates a plan to tear down all the resources managed by this configuration.</p>
+      </div>
+      <div class="card">
+        <img src="images/t5s10.png" alt="Terraform Destroy Complete" />
+        <h3>Infrastructure Destroyed</h3>
+        <p>After confirmation, Terraform destroys all created resources, cleaning up the environment. The output confirms 6 resources were destroyed.</p>
       </div>
     </div>
+
+    <div class="source-code-section" style="margin: 40px 0; padding: 20px; background-color: #1f1f23; border-radius: 8px;">
+      <h3></> Source Code</h3>
+      <p style="margin-bottom: 20px;">The complete source code for this project is available.</p>
+      <a href="task5_code.html" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background-color: #7f5af0; color: #ffffff; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        View Source Code
+      </a>
+    </div>
+
     <a class="back-btn" href="index.html">← Back to Home</a>
   </div>
   <script src="matrix.js"></script>
