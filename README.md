@@ -1,2 +1,1 @@
-Link Foe Website - 
-https://aws-one-sable.vercel.app/
+https://aws-one-sable.vercel.app
